@@ -30,7 +30,7 @@ int main() {
 
 long Factorial(int no)
 {
-  int fact = 1
+  int fact = 1;
   for(int i = no; i > 1; i--)
     {
       fact *= i;
@@ -40,5 +40,9 @@ long Factorial(int no)
 
 long nCr(int n, int r)
 {
-  Factorial(n)
+  int a, b, ncr;
+  a = Factorial(n);
+  b = Factorial(n - r);
+  ncr = a/b;
+  return ncr;
 }
